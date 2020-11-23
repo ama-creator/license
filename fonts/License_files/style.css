@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'bebas_neueregular';
+  src: url('bebasneue-regular-webfont.woff2') format('woff2'),
+       url('bebasneue-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+.container{
+  max-width: 1360px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.line{
+  border-bottom: 1px solid rgb(204, 202, 202);
+}
+
+.license-box{
+  max-width: 500px;
+  padding: 20px;
+  border: 7px solid rgb(204, 202, 202);
+  transform: translate(50%, 50%);
+  background-color: rgb(238, 237, 237);
+}
+
+.licenses-box__inner{
+  padding-bottom: 10px;
+}
+
+
+.form-inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px 15px 35px;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.form-inner:hover,
+.form-inner:focus-within{
+  background-color: rgba(112, 172, 241, 0.2);
+  transition: border .4s, background-color .5s;
+}
+
+.form-inner:focus-within{
+  border: 1px solid rgba(112, 172, 241, 0.2);
+}
+
+.license-plan{
+  font-family: 'bebas_neueregular';
+  text-transform: uppercase;
+}
+
+.license-text{
+  font-family: sans-serif;
+}
+
+/* radio button */
+lable{
+  display: block;
+}
+
+.radio-box{/* styles for select  */
+  .license-box__number{
+    
+  }
+  
+  .license-box__number-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  .license-box__number-license{
+    margin-left: 5px;
+  }
+  
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  padding-left: 24px;
+}
+
+.radio-style{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgb(44, 44, 126);
+  margin-left: -24px;
+  border-radius: 50%;
+}
+
+
+.radio-box:checked + .radio-style::before{
+  content: "";
+  width: 8px;
+  height:8px;
+  background-color: hsl(217, 65%, 51%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* styles for select  */
+.license-box__number{
+  
+}
+
+.license-box__number-position{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.license-box__number-text{
+  padding: 25px 25px 0 25px;
+  margin-bottom: 25px;
+}
+
+.license-box__number-license{
+  margin-left: 5px;
+
+}
