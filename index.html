@@ -12,10 +12,10 @@
     <div class="container">
       <div class="license-box">
         <div class="licenses-box__inner line">
-          <form>
+          <form id="license">
             <div class="form-inner">
               <label class="license-plan">
-                <input name="radio-license" class="radio-box" type="radio">
+                <input value="1" name="radio-license" class="radio-box" type="radio">
                 <span class="radio-style"></span>
                 LICENCEPLAN#1
               </label>
@@ -25,7 +25,7 @@
             </div>
             <div class="form-inner">
               <label class="license-plan">
-                <input name="radio-license" class="radio-box" type="radio">
+                <input value="2" name="radio-license" class="radio-box" type="radio">
                 <span class="radio-style"></span>
                 LICENCEPLAN#2
               </label>
@@ -35,11 +35,11 @@
             </div>
             <div class="form-inner">
               <label class="license-plan">
-                <input name="radio-license" class="radio-box" type="radio" checked>
+                <input value="3" name="radio-license" class="radio-box" type="radio" checked>
                 <span class="radio-style"></span>
                 LICENCEPLAN#3
               </label>
-              <p class="license-text">
+              <p class="license-text" id="text">
                 $34 per license
               </p>
             </div>
@@ -51,35 +51,30 @@
 
                 Number of licenses:
 
-              <select id="license" class="license-box__number-license">
-                <option value="1" class="license-box__number-selected">1</option>
-                <option value="2" class="license-box__number-selected">2</option>
-                <option value="3" class="license-box__number-selected">3</option>
-                <option value="4" class="license-box__number-selected">4</option>
-                <option value="5" class="license-box__number-selected">5</option>
-                <option value="6" class="license-box__number-selected">6</option>
-                <option value="7" class="license-box__number-selected">7</option>
-                <option value="8" class="license-box__number-selected">8</option>
-                <option value="9" class="license-box__number-selected">9</option>
-                <option selected value="10" class="license-box__number-selected">10</option>
+              <select class="license-box__number-license">
+                <option class="license-box__number-selected">1</option>
+                <option class="license-box__number-selected">2</option>
+                <option class="license-box__number-selected">3</option>
+                <option class="license-box__number-selected">4</option>
+                <option class="license-box__number-selected">5</option>
+                <option class="license-box__number-selected">6</option>
+                <option class="license-box__number-selected">7</option>
+                <option class="license-box__number-selected">8</option>
+                <option class="license-box__number-selected">9</option>
+                <option selected class="license-box__number-selected">10</option>
               </select>
             </label>
           </form>
         </div>
         <div class="license-buy">
-          <h2 class="license-plan">TOTAL: <span>$340<sup>US</sup></span></h2>
+          <div id="block-1" class="license-selected__box" style="display:none"><h2 class="license-plan">TOTAL: <span>$130<sup>US</sup></span></h2></div>
+          <div id="block-2" class="license-selected__box" style="display:none"><h2 class="license-plan">TOTAL: <span>$220<sup>US</sup></span></h2></div>
+          <div id="block-3" class="license-selected__box" style="display:none"><h2 class="license-plan">TOTAL: <span>$340<sup>US</sup></span></h2></div>
           <a href="https://rostov.hh.ru/applicant/resumes/view?resume=4cffc05fff0843991c0039ed1f337378473943" class="btn-buy">BUY NOW</a>
           <div class="license-selected">
-            <div id="1" class="license-selected__box" style="display:none"><p class="license-selected__box-value">Selected plan: #1</p></div>
-            <div id="2" class="license-selected__box" style="display:none"><p class="license-selected__box-value">Selected plan: #2</p></div>
-            <div id="3" class="license-selected__box" style="display:none"><p class="license-selected__box-value">Selected plan: #3</p></div>
-            <div id="4" class="license-selected__box" style="display:none"><p class="license-selected__box-value">Selected plan: #4</p></div>
-            <div id="5" class="license-selected__box" style="display:none"><p class="license-selected__box-value">Selected plan: #5</p></div>
-            <div id="6" class="license-selected__box" style="display:none"><p class="license-selected__box-value">Selected plan: #6</p></div>
-            <div id="7" class="license-selected__box" style="display:none"><p class="license-selected__box-value">Selected plan: #7</p></div>
-            <div id="8" class="license-selected__box" style="display:none"><p class="license-selected__box-value">Selected plan: #8</p></div>
-            <div id="9" class="license-selected__box" style="display:none"><p class="license-selected__box-value">Selected plan: #9</p></div>
-            <div id="10" class="license-selected__box" style="display:none"><p class="license-selected__box-value">Selected plan: #10</p></div>
+            <div id="license-1" class="license-selected__box-1" style="display:none"><p class="license-selected__box-value">Selected plan: #1</p></div>
+            <div id="license-2" class="license-selected__box-1" style="display:none"><p class="license-selected__box-value">Selected plan: #2</p></div>
+            <div id="license-3" class="license-selected__box-1" style="display:none"><p class="license-selected__box-value">Selected plan: #3</p></div>
           </div>
         </div>
       </div>
